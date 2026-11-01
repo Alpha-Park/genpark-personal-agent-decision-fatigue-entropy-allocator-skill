@@ -1,0 +1,22 @@
+{
+  "name": "genpark-personal-agent-decision-fatigue-entropy-allocator-skill",
+  "version": "1.0.0",
+  "description": "Models Baumeister ego-depletion, tracks prefrontal cortex decision complexity loads, and schedules high-stakes choices to prevent default-choice bias.",
+  "tools": [
+    {
+      "name": "audit_daily_decision_budget",
+      "description": "Audits cumulative decision load, prefrontal executive remaining, and default bias risk.",
+      "parameters": {
+        "decisions_logged": "list of objects with {name, complexity, uncertainty, irreversibility}"
+      }
+    },
+    {
+      "name": "optimize_high_stakes_decision_timing",
+      "description": "Prioritizes upcoming choices into morning peak or batch windows based on irreversibility.",
+      "parameters": {
+        "upcoming_decisions": "list of objects with {name, impact, irreversibility}",
+        "current_hour": "float (optional, default 14.5)"
+      }
+    }
+  ]
+}
